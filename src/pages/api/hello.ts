@@ -21,7 +21,7 @@ type PostData = {
 
 function get(req: NextApiRequest, res: NextApiResponse<GetData>) {
   const label = "ONDC Pay";
-  // const icon = "https://avatars.githubusercontent.com/u/92437260?v=4";
+  const icon = "https://avatars.githubusercontent.com/u/92437260?v=4";
 
   res.status(200).send({
     label,

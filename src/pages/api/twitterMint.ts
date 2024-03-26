@@ -33,7 +33,7 @@ type PostData = {
 
 function get(req: NextApiRequest, res: NextApiResponse<GetData>) {
   const label = "ONDC Minter";
-  // const icon = 'https://avatars.githubusercontent.com/u/92437260?v=4';
+  const icon = "https://avatars.githubusercontent.com/u/92437260?v=4";
 
   res.status(200).send({
     label,
@@ -162,7 +162,7 @@ async function createMintCNFTInstruction(
         primarySaleHappened: true,
         sellerFeeBasisPoints: 0,
         symbol: "cNFT",
-        // uri: "https://shdw-drive.genesysgo.net/3ETEvVmBCG25Wmxi3vEX6aWfieZGZGLn6h213rVynEnN/first.json",
+        uri: "https://shdw-drive.genesysgo.net/3ETEvVmBCG25Wmxi3vEX6aWfieZGZGLn6h213rVynEnN/first.json",
         uses: null,
         tokenStandard: null,
         editionNonce: null,

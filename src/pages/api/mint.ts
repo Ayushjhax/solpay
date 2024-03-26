@@ -33,7 +33,7 @@ type PostData = {
 
 function get(req: NextApiRequest, res: NextApiResponse<GetData>) {
   const label = "ONDC Pay Minter";
-  // const icon = 'https://avatars.githubusercontent.com/u/92437260?v=4';
+  const icon = 'https://avatars.githubusercontent.com/u/92437260?v=4';
 
   res.status(200).send({
     label,
@@ -182,7 +182,7 @@ async function createMintCNFTInstruction(
         primarySaleHappened: true,
         sellerFeeBasisPoints: 0,
         symbol: "cNFT",
-        // uri: "https://arweave.net/euAlBrhc3NQJ5Q-oJnP10vsQFjTV7E9CgHZcVm8cogo",
+        uri: "https://arweave.net/euAlBrhc3NQJ5Q-oJnP10vsQFjTV7E9CgHZcVm8cogo",
         uses: null,
         tokenStandard: null,
         editionNonce: null,
